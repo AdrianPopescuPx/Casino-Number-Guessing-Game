@@ -5,7 +5,7 @@ using namespace std;
 
 int difficultyLevel, randomNumber, userAmount;
 random_device rd;
-uniform_int_distribution<int> dist(1, 3);
+uniform_int_distribution<int> dist(1, 50);
 
 class Player {
    public:
@@ -24,7 +24,7 @@ void startGame(Player &player) {
     cout << "---------------------------------------\n";
     cout << "Welcome to Casino Number Guessing Game!\n";
     cout << "---------------------------------------\n\n";
-    cout << "In this game you will have to guess a number between 1 and 100.\nThis Game has 3 levels of difficulty and you will have limited "
+    cout << "In this game you will have to guess a number between 1 and 50.\nThis Game has 3 levels of difficulty and you will have limited "
             "choices based on the level you choose.\n";
     cout << "Amount of cash you win at every difficulty level:\n";
     cout << "Easy Level = 500$  ||  Medium Level = 1000$  ||  Hard Level = 3000$\n\n";
